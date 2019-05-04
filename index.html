@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>Car Service</title>
+	
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="./css/index.css">
+
+</head>
+
+<body>
+
+	<div class='container car-service' id='app'>
+		
+		<div class='title'>
+			<p>Цены и варианты защиты</p>
+		</div>
+
+		<ul class='car-classes'>
+			<li
+				v-for="(class_car, index) in class_cars"
+				class="car_block"
+			>
+				<div class="car_title"> 
+					{{class_car.title}}
+				</div>
+					<img
+						:src="class_car.background"
+						:alt="class_car.title"
+						class="img_title"
+					>
+				<div class="btn_class_cars">
+					<button 
+						@click="selectClassCars(index)"
+					> 
+					Рассчитать стоимость 
+					</button>
+				</div>
+				<div 
+					v-if ="class_car.active"
+					class="triangle-down" 
+					:style="{visibility: `visible`}">
+				</div>
+			</li>
+		</ul>
+
+	<div class='main container' id='main'>
+
+		<div class='left-block'>
+			<div class='image-car' id='image_car'>
+				<img 
+				:src="background"
+				:alt="obj_complete.description"
+				>
+			</div>
+
+			<div class='footer-img'>
+
+				<div class='icons'>
+					<ul class="icons-img">
+						<li 
+							v-for="icon in icons"
+							class="icons_block"
+						>
+							<img
+								:src="icon.icon"
+								:alt="icon.title"
+							>
+							<p>{{icon.title}}</p>
+						</li>
+
+					</ul>
+				</div>
+
+				<div class='price'>
+					<p>Цена: </p>
+				</div>
+				<div class="call-me">
+					<a href=''>Позвоните мне</a>
+				</div>
+				<div class='price-details'>
+					<p>Материалы + работа<span>${{price}}</span>
+					</p> 
+				</div>
+			</div>
+		</div>
+
+		<div class="widget">
+
+			<ul class="widget-list">
+				<li 
+					v-for = "(complete, index) in obj_complete"
+					class = "description_car pointer"
+					@click = "selectDescription(index)"
+					:class="carItemClassActive(index)"
+				>
+				{{complete.description}}
+
+				</li>
+			</ul>
+
+			<div class='widget-list-details'>
+				<div class='sub-head-menu'>
+					<a href='#sub_menu' @click="subMenuOpen = !subMenuOpen">Частями</a>
+					<span 
+						class='dropdown'
+						:class="openSubMenu()" 
+					> 
+					</span>
+				</div>
+				<ul 
+					class='sub-widget-list-details' 
+					id='#sub_menu'
+					v-if="subMenuOpen"
+				>
+					<li 
+						v-for = "(details, index) in obj_details"
+						class = "details_car pointer"
+						@click = "selectSubDescription(index)"
+						:class="carSubItemClassActive(index)"
+					>
+						{{details.description}}
+					</li>
+
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="./js/index.js"></script>
+
+</body>
+</html>
