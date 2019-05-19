@@ -17,7 +17,7 @@ const icons = [
                 {title: 'часть заднего бампера', icon: './icons/rearbumper.png'},
                 {title: 'ручки', icon: './icons/handles.png'},
                 {title: 'часть капота', icon: './icons/parthood.png'},
-                {title: 'капот полностью', icon: './icons/hood.png'},
+                {title: 'капот целиком', icon: './icons/hood.png'},
                 {title: 'часть крыльев', icon: './icons/partwings.png'},
                 {title: 'крылья полностью', icon: './icons/wings.png'}
 ];
@@ -44,7 +44,7 @@ const obj_complete = [
 ];
 
 const obj_details = [
-                      {description: 'Оптика', price: 10, background: 
+                      {description: 'Оптика стандарт', price: 10, background: 
                         ['./images/citroen/optic.jpg', './images/mazda/optic.jpg', './images/mercedes/optic.jpg']},
                       {description: 'Пороги внутренние', price: 12, background: 
                         ['./images/citroen/thresholdsinternal.jpg', './images/mazda/thresholdsinternal.jpg', './images/mercedes/thresholdsinternal.jpg']},
@@ -77,6 +77,7 @@ new Vue({
     background: obj_complete[0].background[0],
     subMenuOpen: false
   },
+  // update update update
   methods: {
     selectClassCars (index) {
       this.class_cars.forEach ((el, i) => {
