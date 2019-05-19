@@ -14,7 +14,7 @@ const icons = [
                 {title: 'тоцы дверей', icon: './icons/door.png'},
                 {title: 'противотуманки', icon: './icons/foglights.png'},
                 {title: 'передний бампер', icon: './icons/frontbumper.png'},
-                {title: 'полка заднего бампера', icon: './icons/rearbumper.png'},
+                {title: 'часть заднего бампера', icon: './icons/rearbumper.png'},
                 {title: 'ручки', icon: './icons/handles.png'},
                 {title: 'часть капота', icon: './icons/parthood.png'},
                 {title: 'капот полностью', icon: './icons/hood.png'},
@@ -38,7 +38,7 @@ const obj_complete = [
                       {description: 'Стандарт+++', price: 28, background: 
                         ['./images/citroen/standart3plus.jpg', './images/mazda/standart3plus.jpg', './images/mercedes/standart3plus.jpg'],
                         icons: [icons[0], icons[1], icons[4], icons[5], icons[6], icons[7], icons[9], icons[11]]},
-                      {description: 'Целиком', price: 50, background: 
+                      {description: 'Комплекс', price: 50, background: 
                         ['./images/citroen/all.jpg', './images/mazda/all.jpg', './images/mercedes/all.jpg'],
                         icons: [icons[0], icons[1], icons[4], icons[5], icons[6], icons[7], icons[9], icons[10], icons[11]]}
 ];
