@@ -120,12 +120,6 @@ new Vue({
     }
   }
 })
-<<<<<<< HEAD
-// lorem lorem lorem // lorem lorem lorem // lorem lorem lorem // lorem lorem lorem // lorem lorem lorem 
-// lorem lorem lorem // lorem lorem lorem // lorem lorem lorem // lorem lorem lorem 
-// lorem lorem lorem // lorem lorem lorem // lorem lorem lorem // lorem lorem lorem 
-// lorem lorem lorem // lorem lorem lorem // lorem lorem lorem 
-=======
 
 // lorem lorem lorem 
 >>>>>>> a73c2079351c49c3447eed56d5abb655a103624a
