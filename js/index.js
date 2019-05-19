@@ -22,7 +22,7 @@ const icons = [
                 {title: 'крылья полностью', icon: './icons/wings.png'}
 ];
 
-// update update update
+// lorem lorem lorem 
 
 const obj_complete = [
                       {description: 'Минимальный', price: 10, background: 
@@ -101,7 +101,7 @@ new Vue({
       this.selectDescriptionIndex = index;
       this.icons = obj_complete[index].icons;
     },
-    // update update update
+// lorem lorem lorem 
     carItemClassActive(index) {
       return {'active': this.selectDescriptionIndex === index}
     },
@@ -120,7 +120,12 @@ new Vue({
     }
   }
 })
+<<<<<<< HEAD
 // lorem lorem lorem // lorem lorem lorem // lorem lorem lorem // lorem lorem lorem // lorem lorem lorem 
 // lorem lorem lorem // lorem lorem lorem // lorem lorem lorem // lorem lorem lorem 
 // lorem lorem lorem // lorem lorem lorem // lorem lorem lorem // lorem lorem lorem 
 // lorem lorem lorem // lorem lorem lorem // lorem lorem lorem 
+=======
+
+// lorem lorem lorem 
+>>>>>>> a73c2079351c49c3447eed56d5abb655a103624a
