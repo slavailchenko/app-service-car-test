@@ -22,6 +22,8 @@ const icons = [
                 {title: 'крылья полностью', icon: './icons/wings.png'}
 ];
 
+// update update update
+
 const obj_complete = [
                       {description: 'Минимальный', price: 10, background: 
                         ['./images/citroen/mini.jpg', './images/mazda/mini.jpg', './images/mercedes/mini.jpg'],
@@ -98,8 +100,8 @@ new Vue({
       this.background = obj_complete[index].background[this.selectedClassCarsIndex];
       this.selectDescriptionIndex = index;
       this.icons = obj_complete[index].icons;
-      console.log(this.price, this.background );  
     },
+    // update update update
     carItemClassActive(index) {
       return {'active': this.selectDescriptionIndex === index}
     },
@@ -109,8 +111,7 @@ new Vue({
       this.background = obj_details[index].background[this.selectedClassCarsIndex];
       this.selectDescriptionSubIndex = index;
       this.icons = [];
-      console.log(this.price, this.background );
-    },
+   },
     carSubItemClassActive(index) {
       return {'active': this.selectDescriptionSubIndex === index}
     },
